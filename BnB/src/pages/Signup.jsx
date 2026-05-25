@@ -5,6 +5,7 @@ import { useAuth } from '../hooks/useAuth'
 import loginBgImg from '../assets/images/loginbg.jpg'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent } from '@/components/ui/card'
+import ThemeToggle from '../components/ThemeToggle/ThemeToggle'
 
 function Signup() {
   const { signup } = useAuth()
@@ -33,6 +34,9 @@ function Signup() {
         <img src={loginBgImg} alt="Sign up" className="auth-image" />
         <CardContent className="auth-form">
           <form className="auth-form" onSubmit={handleSubmit}>
+            <div className="auth-theme-row">
+              <ThemeToggle />
+            </div>
             <h1>Create Account</h1>
             <p>Join Ettarra Coffee House.</p>
             <Input name="fullName" type="text" placeholder="Full name" required />

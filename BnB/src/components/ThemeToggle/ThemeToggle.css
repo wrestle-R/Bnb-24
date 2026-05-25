@@ -1,0 +1,46 @@
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 203, 161, 0.55);
+  background: rgba(255, 236, 218, 0.12);
+  color: #ffeede;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 170ms ease, background 170ms ease, border-color 170ms ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 223, 196, 0.8);
+  background: rgba(255, 236, 218, 0.2);
+}
+
+.theme-toggle-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 999px;
+  background: linear-gradient(130deg, #ffcb9a, #ff8e45);
+  box-shadow: 0 0 0 2px rgba(255, 240, 227, 0.28);
+}
+
+:root.light .theme-toggle {
+  color: #3e2c20;
+  border-color: rgba(76, 51, 36, 0.24);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+:root.light .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(76, 51, 36, 0.4);
+}
+
+:root.light .theme-toggle-dot {
+  background: linear-gradient(130deg, #5f88d6, #8bc0ff);
+  box-shadow: 0 0 0 2px rgba(96, 136, 214, 0.22);
+}

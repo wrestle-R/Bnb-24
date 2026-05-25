@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
 import './Navbar.css'
 
 function Navbar() {
@@ -24,6 +25,7 @@ function Navbar() {
         </div>
 
         <div className="nav-auth">
+          <ThemeToggle />
           {isAuthenticated ? (
             <button type="button" onClick={logout} className="nav-auth-btn">
               Logout

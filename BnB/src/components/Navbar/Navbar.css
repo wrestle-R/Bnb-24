@@ -62,7 +62,30 @@
 
 .nav-auth {
   display: flex;
+  align-items: center;
   gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+:root.light .nav-shell {
+  border-bottom: 1px solid rgba(74, 47, 32, 0.18);
+  background: linear-gradient(180deg, rgba(255, 251, 246, 0.9), rgba(255, 246, 237, 0.74));
+}
+
+:root.light .brand {
+  color: #2f2118;
+}
+
+:root.light .nav-links a,
+:root.light .nav-auth a,
+:root.light .nav-auth button {
+  color: #412e21;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+:root.light .nav-links a.active {
+  border-color: rgba(175, 109, 67, 0.58);
+  background: rgba(217, 146, 104, 0.26);
 }
 
 @media (max-width: 960px) {
