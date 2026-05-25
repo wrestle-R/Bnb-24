@@ -7,6 +7,7 @@ Modernized frontend-only coffee house app, structured for maintainability and Ve
 - React 18 + React Router 6
 - Vite 5
 - Tailwind CSS + Bootstrap
+- shadcn/ui (radix-nova)
 - Vitest + Testing Library
 
 ## Project Structure

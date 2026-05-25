@@ -1,3 +1,5 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -295,5 +297,83 @@ textarea,
   .line-item {
     grid-template-columns: 1fr;
     gap: 0.4rem;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 7% 5%;
+    --foreground: 37 24% 94%;
+    --card: 0 15% 11%;
+    --card-foreground: 37 24% 94%;
+    --popover: 0 15% 11%;
+    --popover-foreground: 37 24% 94%;
+    --primary: 0 60% 41%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 23% 14%;
+    --secondary-foreground: 37 24% 94%;
+    --muted: 0 16% 11%;
+    --muted-foreground: 33 13% 75%;
+    --accent: 0 59% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 74% 42%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 100%;
+    --input: 0 0% 100%;
+    --ring: 37 24% 94%;
+    --chart-1: 0 60% 41%;
+    --chart-2: 0 59% 30%;
+    --chart-3: 38 82% 85%;
+    --chart-4: 33 13% 75%;
+    --chart-5: 0 23% 14%;
+    --radius: 0.625rem;
+    --sidebar: 0 14% 9%;
+    --sidebar-foreground: 37 24% 94%;
+    --sidebar-primary: 0 60% 41%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 23% 14%;
+    --sidebar-accent-foreground: 37 24% 94%;
+    --sidebar-border: 0 0% 100%;
+    --sidebar-ring: 37 24% 94%;
+  }
+  .dark {
+    --background: 0 7% 5%;
+    --foreground: 37 24% 94%;
+    --card: 0 15% 11%;
+    --card-foreground: 37 24% 94%;
+    --popover: 0 15% 11%;
+    --popover-foreground: 37 24% 94%;
+    --primary: 0 60% 41%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 23% 14%;
+    --secondary-foreground: 37 24% 94%;
+    --muted: 0 16% 11%;
+    --muted-foreground: 33 13% 75%;
+    --accent: 0 59% 30%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 74% 42%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 100%;
+    --input: 0 0% 100%;
+    --ring: 37 24% 94%;
+    --chart-1: 0 60% 41%;
+    --chart-2: 0 59% 30%;
+    --chart-3: 38 82% 85%;
+    --chart-4: 33 13% 75%;
+    --chart-5: 0 23% 14%;
+    --sidebar: 0 14% 9%;
+    --sidebar-foreground: 37 24% 94%;
+    --sidebar-primary: 0 60% 41%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 23% 14%;
+    --sidebar-accent-foreground: 37 24% 94%;
+    --sidebar-border: 0 0% 100%;
+    --sidebar-ring: 37 24% 94%;
+  }
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

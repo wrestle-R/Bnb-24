@@ -1,10 +1,11 @@
+import { Button as ShadcnButton } from '@/components/ui/button'
 import './Button.css'
 
 function Button({ children, className = '', ...props }) {
   return (
-    <button className={`btn-primary ${className}`.trim()} {...props}>
+    <ShadcnButton className={`btn-primary ${className}`.trim()} {...props}>
       {children}
-    </button>
+    </ShadcnButton>
   )
 }
 
