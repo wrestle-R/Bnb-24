@@ -1,0 +1,21 @@
+:root {
+  --bg: #0f0d0d;
+  --bg-soft: #181313;
+  --surface: #211818;
+  --surface-strong: #2b1b1b;
+  --text: #f4f1eb;
+  --text-dim: #c6bfb6;
+  --accent: #a52a2a;
+  --accent-strong: #7a1f1f;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.22);
+}

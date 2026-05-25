@@ -1,0 +1,81 @@
+.nav-shell {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  background: rgba(10, 10, 10, 0.88);
+}
+
+.nav-bar {
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.nav-links a,
+.nav-auth a,
+.nav-auth button {
+  color: #f0f0f0;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.46rem 0.85rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+.nav-links a.active {
+  border-color: rgba(245, 245, 245, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-links a:hover,
+.nav-auth a:hover,
+.nav-auth button:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-auth {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.nav-auth-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .nav-bar {
+    grid-template-columns: 1fr;
+    padding-block: 0.7rem;
+  }
+
+  .brand {
+    text-align: center;
+  }
+
+  .nav-links,
+  .nav-auth {
+    justify-content: center;
+  }
+}
